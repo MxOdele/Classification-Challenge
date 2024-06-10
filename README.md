@@ -67,7 +67,7 @@ Below is a more in-depth explanation of the various cells coded within the `spam
 | 15[^8] | Importing `precision_score` from `sklearn.metrics` |
 | 16[^8] | Declaring `lr_precision` as the `precision_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` <br> Declaring `rf_precision` as the `precision_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
 | 17[^8] | Displaying `lr_precision` for analysis <br> Displaying `rf_precision` for analysis |
-| **Final Confirmation**[^4] [^8] | Reviewing the additional findings through the used of `precision_score` and further confirming the earlier predictions |
+| **Final Confirmation**[^4][^8] | Reviewing the additional findings through the used of `precision_score` and further confirming the earlier predictions |
 
 [^1]: Image courtesy of the free source image site, <a href='https://www.pexels.com/photo/black-and-gray-digital-device-193003/' title='Link to Pexels listing for image'>Pexels</a>
 
