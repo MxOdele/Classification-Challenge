@@ -48,25 +48,25 @@ Below is a more in-depth explanation of the various cells coded within the `spam
 | Cell (in sequence) | Notes[^2] |
 | ---: | :--- |
 | 1[^3] | Importing initial libraries and dependencies |
-| 2[^3] | Importing data to the DataFrame (DF) `data` <br> Displaying a sample of the data |
+| 2[^3] | Importing data to the DataFrame (DF) `data` <br> <br> Displaying a sample of the data |
 | **Predictions**[^4] | Predicting which model (Logistic Regression or Random Forest Classifier) will perform better <br> *Spoiler: My predictions based on experience from previous activities from the class, and they were correct in the end* |
-| 3 | Declaring `y` as the `spam` column of `data` <br> Declaring `X` as a copy of `data` with the `spam` column dropped |
+| 3 | Declaring `y` as the `spam` column of `data` <br> <br> Declaring `X` as a copy of `data` with the `spam` column dropped |
 | 4 | Checking the balance of values in `y` with `value_counts()` |
-| 5[^5] | Splitting the dataset into `X_train`, `X_test`, `y_train`, and `y_test` with `train_test_split()` <br> *Note:* `random_state=13` *was used to maintain consistent testing during development* <br> Displaying a sample of the data from `X_train` |
-| 6[^6] | Importing `StandardScalar` from `sklearn.preprocessing` <br> Declaring `scalar` as an instance of `StandardScalar()` |
+| 5[^5] | Splitting the dataset into `X_train`, `X_test`, `y_train`, and `y_test` with `train_test_split()` <br> *Note:* `random_state=13` *was used to maintain consistent testing during development* <br> <br> Displaying a sample of the data from `X_train` |
+| 6[^6] | Importing `StandardScalar` from `sklearn.preprocessing` <br> <br> Declaring `scalar` as an instance of `StandardScalar()` |
 | 7 | Declaring `X_scalar` to fit `scalar` to the training data `X_train` |
-| 8 | Declaring `X_train_scaled` as a `scalar.transform()` of the training data `X_train` <br> Declaring `X_test_scaled` as a `scalar.transform()` of the testing data `X_test` |
-| 9[^6] | Importing `LogisticRegression` from `sklearn.linear_model` <br> Declaring `lr_model` as an instance of `LogisticRegression()` with a `random_state` of `1`, and fitting to the training data `X_train_scaled` and `y_train` |
-| 10 | Declaring `lr_predictions` as a `lr_model.predict()` on the testing data `X_test_scaled` <br> Displaying a sample of the predicted data |
+| 8 | Declaring `X_train_scaled` as a `scalar.transform()` of the training data `X_train` <br> <br> Declaring `X_test_scaled` as a `scalar.transform()` of the testing data `X_test` |
+| 9[^6] | Importing `LogisticRegression` from `sklearn.linear_model` <br> <br> Declaring `lr_model` as an instance of `LogisticRegression()` with a `random_state` of `1`, and fitting to the training data `X_train_scaled` and `y_train` |
+| 10 | Declaring `lr_predictions` as a `lr_model.predict()` on the testing data `X_test_scaled` <br> <br> Displaying a sample of the predicted data |
 | 11[^7] | Calculating the `accuracy_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` |
-| 12[^6] | Importing `RandomForestClassifier` from `sklearn.ensemble` <br> Declaring `rf_model` as an instance of `RandomForestClassifier()` with a `random_state` of `1`, and fitting to the training data `X_train_scaled` and `y_train` |
-| 13 | Declaring `rf_predictions` as a `rf_model.predict()` on the testing data `X_test_scaled` <br> Displaying a sample of the predicted data |
+| 12[^6] | Importing `RandomForestClassifier` from `sklearn.ensemble` <br> <br> Declaring `rf_model` as an instance of `RandomForestClassifier()` with a `random_state` of `1`, and fitting to the training data `X_train_scaled` and `y_train` |
+| 13 | Declaring `rf_predictions` as a `rf_model.predict()` on the testing data `X_test_scaled` <br> <br> Displaying a sample of the predicted data |
 | 14[^7] | Calculating the `accuracy_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
 | **Evaluation**[^4] | Reviewing the findings and confirming the earlier predictions |
 | **Additional Confirmation**[^8] | Declaring an section of code (not required by the assignment) to further support earlier predictions through the use of `precision_score()` |
 | 15[^8] | Importing `precision_score` from `sklearn.metrics` |
-| 16[^8] | Declaring `lr_precision` as the `precision_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` <br> Declaring `rf_precision` as the `precision_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
-| 17[^8] | Displaying `lr_precision` for analysis <br> Displaying `rf_precision` for analysis |
+| 16[^8] | Declaring `lr_precision` as the `precision_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` <br> <br> Declaring `rf_precision` as the `precision_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
+| 17[^8] | Displaying `lr_precision` for analysis <br> <br> Displaying `rf_precision` for analysis |
 | **Final Confirmation**[^8] | Reviewing the additional findings through the used of `precision_score` and further confirming the earlier predictions |
 
 [^1]: Image courtesy of the free source image site, <a href='https://www.pexels.com/photo/black-and-gray-digital-device-193003/' title='Link to Pexels listing for image'>Pexels</a>
