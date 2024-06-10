@@ -63,11 +63,12 @@ Below is a more in-depth explanation of the various cells coded within the `spam
 | 13 | Declaring `rf_predictions` as a `rf_model.predict()` on the testing data `X_test_scaled` <br> <br> Displaying a sample of the predicted data |
 | 14[^7] | Calculating the `accuracy_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
 | **Evaluation**[^4] | Reviewing the findings and confirming the earlier predictions |
-| **Additional Confirmation**[^8] | Declaring an section of code (not required by the assignment) to further support earlier predictions through the use of `precision_score()` |
-| 15[^8] | Importing `precision_score` from `sklearn.metrics` |
-| 16[^8] | Declaring `lr_precision` as the `precision_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` <br> <br> Declaring `rf_precision` as the `precision_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
-| 17[^8] | Displaying `lr_precision` for analysis <br> <br> Displaying `rf_precision` for analysis |
-| **Final Confirmation**[^8] | Reviewing the additional findings through the used of `precision_score` and further confirming the earlier predictions |
+| ***NOTE:*** | *The following markdown and code cells were not required by the assignment, and were written to further support the earlier predictions* |
+| **Additional Confirmation** | Declaring the purpose of the aforementioned additional cells |
+| 15 | Importing `precision_score` from `sklearn.metrics` |
+| 16 | Declaring `lr_precision` as the `precision_score()` of the Logistic Regression model by evaluating `y_test` against `lr_predictions` <br> <br> Declaring `rf_precision` as the `precision_score()` of the Random Forest Classifier model by evaluating `y_test` against `rf_predictions` |
+| 17 | Displaying `lr_precision` for analysis <br> <br> Displaying `rf_precision` for analysis |
+| **Final Confirmation** | Reviewing the additional findings through the used of `precision_score` and further confirming the earlier predictions |
 
 [^1]: Image courtesy of the free source image site, <a href='https://www.pexels.com/photo/black-and-gray-digital-device-193003/' title='Link to Pexels listing for image'>Pexels</a>
 
@@ -82,5 +83,3 @@ Below is a more in-depth explanation of the various cells coded within the `spam
 [^6]: Denotes cells with `import`s provided, all remaining coding by student
 
 [^7]: Provided variable `testing_predictions` renamed to `lr_predictions` or `rf_predictions` to maintain distinct prediction variables for both models
-
-[^8]: Cell added to further support predictions made prior to `cell 3`
